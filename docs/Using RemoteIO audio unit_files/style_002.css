@@ -1,0 +1,380 @@
+/*   
+Theme Name: A Tasty Pixel Theme
+Theme URI: 
+Description: 
+Author: Michael Tyson
+Author URI: http://atastypixel.com
+Template: thematic
+Version: 1.0
+Tags: Thematic
+.
+Thematic is © Ian Stewart http://themeshaper.com/
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-l-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+/* @group General */
+
+body {
+   background: #1a1a1a;
+   padding: 0;
+   margin: 0;
+   font-size: 14px;
+   line-height: 22px;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+             "Helvetica Neue", sans-serif;
+   font-weight: 300;
+}
+
+#wrapper {
+   background: white url(/media/images/background.png) repeat-x 0 130px;
+   height: 100%;
+   width: 100%;
+}
+
+
+/* @end */
+
+/* @group Layout */
+
+/* @group Header */
+
+#header {
+   width: 100%;
+   height: 277px;
+   min-width: 935px;
+}
+
+#header h1 {
+   background: url(/media/images/header-small.jpg) no-repeat center center;
+   position: absolute;
+   width: 344px;
+   height: 106px;
+   text-indent: -9999px;
+   top: 17px;
+   left: 24px;
+}
+
+#header h1 a {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+#header ul {
+   background: url(/media/images/menu-small.png) no-repeat center center;
+   list-style-type: none;
+   float: right;
+   position: relative;
+   margin-top: 71px;
+   width: 440px;
+   padding: 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+#header li {
+   padding: 0;
+   float: left;
+   display: block;
+   width: 25%;
+   margin: 0;
+}
+
+#header li a {
+   display: block;
+   height: 50px;
+   width:  100%;
+   text-indent: -9999px;
+}
+
+h1.blog {
+   display: block;
+   position: absolute;
+   top: 71px;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   text-indent: -9999px;
+   overflow: hidden;
+   width: 103px;
+   height: 50px;
+   background: #fffeff url(/media/images/menu-small-selected.png) no-repeat 32px;
+   right: 325px;
+   z-index: 4;
+}
+
+#parachute {
+   background: url(/media/images/sketches/parachute.png) no-repeat;
+   width: 263px;
+   height: 395px;
+   position: absolute;
+   top: 23px;
+   left: 0;
+   z-index: 3;
+}
+
+.home div#primary.aside.main-aside {
+   margin-top: 120px;
+}
+
+.home #header h1 {
+   left: 100px;
+}
+
+
+/* @end */
+
+/* @group Content */
+
+#container {
+   width: 900px;
+}
+
+#content, .hentry {
+   width: 580px;
+}
+
+#main {
+   width: 900px;
+   min-height: 709px;
+   background: url(/media/images/page-shading.jpg) no-repeat 49px top;
+}
+
+h2.entry-title {
+   font-size: 1.2em;
+      border-bottom: 1px solid #cecece;
+   padding: 0;
+   margin-bottom: 5px;
+}
+
+
+p.rss, p.twitter {
+   line-height: 14px;
+   text-decoration: none;
+   margin: 26px;
+   white-space: nowrap;
+}
+
+p.rss a, p.twitter a {
+   text-decoration: none;
+   padding-left: 23px;   
+}
+
+p.rss .statistics, p.twitter .statistics {
+	display: block;
+	padding-left: 23px;
+	color: #888;
+	font-size: 0.9em;
+}
+
+p.rss {
+   background: url(/media/images/rss.png) no-repeat 0 top;
+   margin-bottom: 8px;
+}
+
+p.twitter {
+   background: url(/media/images/twitter.png) no-repeat 0 top;
+   margin-top: 0;
+}
+
+.twitter-image img {
+	padding: 30px;
+	background: #eee;
+	border: 1px solid #bbb;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	margin-bottom: 50px;
+}
+
+.twitter-image {
+	text-align: center;
+	padding-bottom: 80px;
+	border-bottom: 1px dotted #aaa;
+}
+
+.twitter-image p a:before {
+	content: url(/media/images/twitter.png);
+}
+
+.twitter-image a {
+	text-decoration: none;
+	color: black;
+}
+
+.twitter-image h1 {
+	font-size: 20px;
+	color: #888;
+	margin: 10px;
+}
+
+/* @end */
+
+/* @group Sidebar */
+
+
+div#primary.aside.main-aside {
+   width: 255px;
+   overflow: hidden;
+   float: left;
+   text-align: right;
+   font-size: 0.7em;
+   border: none;
+   padding-top: 0;
+}
+
+div#primary.aside.main-aside h3 {
+   font-weight: bold;
+   font-style: normal;
+}
+
+div#primary.aside.main-aside li.widgetcontainer {
+   margin-bottom: 26px;
+}
+
+div#primary.aside.main-aside p {
+   text-align: justify;
+   font-size: 1.3em;
+}
+
+div#primary.aside.main-aside li {
+   list-style-type: none;
+   text-align: left;
+}
+
+div#primary.aside.main-aside .widgetcontainer li {
+  font-size: 1.2em;
+}
+
+div#primary.aside.main-aside #most-visited-posts li {
+   list-style-type: circle;
+}
+
+div#primary.aside.main-aside input#s {
+   width: 100%;
+}
+
+div#primary.aside.main-aside ul.products {
+   margin-top: 20px;
+   list-style-type: none;
+   font-size: 1.1em;
+   text-align: left;
+}
+
+div#primary.aside.main-aside ul.products a {
+   text-decoration: none;
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+div#primary.aside.main-aside ul.products a span {
+   padding-left: 58px;
+   display: block;
+}
+
+div#primary.aside.main-aside ul.products li {
+   height: 66px;
+}
+
+div#primary.aside.main-aside ul.products li.talkie {
+   background: url(/media/images/products/talkie/icon-tiny.jpg) no-repeat;
+}
+
+div#primary.aside.main-aside ul.products li.loopy {
+   background: url(/media/images/products/loopy/icon-tiny.jpg) no-repeat;
+}
+
+div#primary.aside.main-aside ul.products li.talkie-for-mac {
+   background: url(/media/images/products/talkie-for-mac/icon-tiny.jpg) no-repeat;
+}
+
+
+/* @end */
+
+/* @group Footer */
+
+#footer {
+   border: 0;
+   background: url(/media/images/footer.jpg) repeat-x 0 top;
+   width: 100%;
+   height: 128px;
+   vertical-align: bottom;
+   font-size: 0.9em;
+   color: #888;
+}
+
+#siteinfo {
+   position: absolute;
+   margin-top: 81px;
+   text-align: center;
+   width: 100%;
+}
+
+#footer a {
+   text-decoration: none;
+   color: #fff;
+}
+
+
+
+/* @end */
+
+
+
+/* @end */
+
+/* @group Content */
+
+#comments-list .comment-content ol, #comments-list .comment-content ul,
+#comments-list .comment-content ol li, #comments-list .comment-content ul li {
+	border: none;
+	background: none;
+}
+
+#comments-list .comment-content ul {
+	list-style: circle;
+	margin-left: 25px;
+}
+
+#comments-list .comment-content ol {
+	list-style: decimal;
+	margin-left: 25px;	
+}
+
+#comments-list .comment-content ol li, #comments-list .comment-content ul li {
+	padding: 0;
+}
+
+.addthis_container {
+	line-height: 14px;
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+.addthis_container a {
+	text-decoration: none;
+	color: #888;
+}
+
+
+/* @end */
+

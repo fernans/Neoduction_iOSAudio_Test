@@ -1,0 +1,12 @@
+# Empaquetados antiguos (publicados como release de GitHub)
+neoduction.zip
+
+# Junk de IDE / SO
+xcuserdata/
+._*
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Artefactos de compilación Xcode
+docs/aurioTouch/build/
